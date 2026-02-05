@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="ask">
+        <h1>Will You Be My Valentine?</h1>
+        
+        <img src="./styles/images/ec4a67af3e061dc92c2e4d1a810bcec9.gif" alt="Minion holding a heart">
+        <div class="buttons">
+            <button id="yesBtn">Yes</button>
+            <button id="sureBtn">Are You Sure?</button>
+        </div>
+    </div>
+
+    <div id="success">
+        <h1>Yayy!!</h1>
+        <img src="./styles/images/682b3cf6c3c1b216379508a54e527102.gif" alt="Fireworks of love">
+    </div>
+
+    <script>
+        let yesBtn = document.getElementById('yesBtn');
+        let sureBtn = document.getElementById('sureBtn');
+        let askSection = document.getElementById('ask');
+        let successSection = document.getElementById('success');
+        let scale = 1;
+
+        sureBtn.addEventListener('click', () => {
+            scale += 0.5;
+            yesBtn.style.transform = `scale(${scale})`;
+        });
+
+        yesBtn.addEventListener('click', () => {
+            askSection.style.display = 'none';
+            successSection.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
