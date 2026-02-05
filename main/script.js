@@ -25,6 +25,7 @@ const truths = [
 ];
 
 const dares = [
+    "I dare you and me to book a room",
     "Give me a 3-minute shoulder massage",
     "Dance with me to our favorite song",
     "Write me a love note right now",
