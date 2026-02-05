@@ -5,6 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Will You Be My Valentine?</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <style>
+        /* Secret button styling */
+        .secret-section {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .secret-heading {
+            font-size: 1.2em;
+            color: #ff69b4;
+            margin-bottom: 15px;
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .secret-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            font-weight: bold;
+        }
+
+        .secret-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        .secret-btn::before {
+            content: "🔒 ";
+        }
+
+        .secret-btn::after {
+            content: " 💕";
+        }
+    </style>
 </head>
 <body>
     <div id="ask">
@@ -20,6 +61,14 @@
     <div id="success">
         <h1>Yayy!!</h1>
         <img src="./styles/images/682b3cf6c3c1b216379508a54e527102.gif" alt="Fireworks of love">
+        
+        <!-- Secret Section -->
+        <div class="secret-section">
+            <p class="secret-heading">✨ Just for us... our little secret ✨</p>
+            <button class="secret-btn" onclick="window.location.href='secretPage.html'">
+                Our Secret Game
+            </button>
+        </div>
     </div>
 
     <script>
