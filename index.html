@@ -71,22 +71,6 @@
         </div>
     </div>
 
-    <script>
-        let yesBtn = document.getElementById('yesBtn');
-        let sureBtn = document.getElementById('sureBtn');
-        let askSection = document.getElementById('ask');
-        let successSection = document.getElementById('success');
-        let scale = 1;
-
-        sureBtn.addEventListener('click', () => {
-            scale += 0.5;
-            yesBtn.style.transform = `scale(${scale})`;
-        });
-
-        yesBtn.addEventListener('click', () => {
-            askSection.style.display = 'none';
-            successSection.style.display = 'block';
-        });
-    </script>
+    <script type="module" src="./main/script.js"></script>
 </body>
 </html>
